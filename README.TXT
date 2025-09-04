@@ -13,3 +13,8 @@ It is discussed in chapter 2.
 Purpose of project: To illustrate conditional statements.
 How to start this project: Create one or more TicketMachine objects.
 
+47. it says "Use a positive amount rather than: 0"
+
+48. it doesnt give a message when u enter 0
+
+49. 
