@@ -40,9 +40,19 @@ How to start this project: Create one or more TicketMachine objects.
             System.out.println("too expensive because your budget is only"+price );
         }
         else {
-             System.out.println("just right");
+            
+            
+            
+            
+            System.out.println("just right");
         }
         
- 59.        
+ 59. u will always get 0 refund , u can call retrun money and if it always says 0 then its worng
+ 
+ 60. because any code after a return satement never works 
+ 
+ 61. its 0 , because we made a copy in the constructer and only change that and never the real one 
+ 
+ 62. 
  
  
