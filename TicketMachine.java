@@ -23,7 +23,7 @@ public class TicketMachine
      */
     public TicketMachine(int cost)
     {
-        int price = cost;  
+        price = cost;
         balance = 0;
         total = 0;
     }
@@ -65,25 +65,25 @@ public class TicketMachine
      */
     public void printTicket()
     {
-        if(balance >= price) {
-            // Simulate the printing of a ticket.
-            System.out.println("##################");
-            System.out.println("# The BlueJ Line");
-            System.out.println("# Ticket");
-            System.out.println("# " + price + " cents.");
-            System.out.println("##################");
-            System.out.println();
+      
+    int amountLeftToPay = price - balance;
 
-            // Update the total collected with the price.
-            total = total + price;
-            // Reduce the balance by the price.
-            balance = balance - price;
-        }
-        else {
-            System.out.printf("You must insert at least %d more cents.%n",
-                              price - balance);
-        }
+    if(amountLeftToPay <= 0) {
+        // Enough money inserted
+        System.out.println("##################");
+        System.out.println("# The BlueJ Line");
+        System.out.println("# Ticket");
+        System.out.println("# " + price + " cents.");
+        System.out.println("##################");
+        System.out.println();
+
+        total = total + price;
+        balance = balance - price;
+    } else {
+        // Not enough money
+        System.out.println("You must insert at least: " + amountLeftToPay + " more cents.");
     }
+}
 
     /**
      * Return the money in the balance.
@@ -91,9 +91,17 @@ public class TicketMachine
      */
     public int refundBalance()
     {
-        balance=0;
-        return balance;
-        
+        int amountToRefund;
+        amountToRefund = balance;
+        balance = 0;
+        return amountToRefund;
+    }
+    
+    public int emptyMachine()
+    {
+        int oldtotal = total;
+        total = 0;
+        return oldtotal; 
         
     }
 }
