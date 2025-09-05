@@ -17,4 +17,32 @@ How to start this project: Create one or more TicketMachine objects.
 
 48. it doesnt give a message when u enter 0
 
-49. 
+50.yes , it was make visible and invisible 
+
+ 52. nothing happens , no message 
+ 
+ 53. no, cause u cant print a ticket to make it - , its impossibe
+ 
+ 54. */%
+ 
+ 55. saving = price * discount ;
+ 
+ 56. mean = total / count 
+ 
+ 57. if(price> budget ) {
+            System.out.println("too expensive");
+        }
+        else {
+             System.out.println("just right");
+        }
+ 
+ 58. if(price> budget ) {
+            System.out.println("too expensive because your budget is only"+price );
+        }
+        else {
+             System.out.println("just right");
+        }
+        
+ 59.        
+ 
+ 
