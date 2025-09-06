@@ -53,6 +53,7 @@ How to start this project: Create one or more TicketMachine objects.
  
  61. its 0 , because we made a copy in the constructer and only change that and never the real one 
  
- 62. 
+ 64. tried to do 64 and i am pretty sure its works but sometimes it gives a weird answer 
+ 
  
  
